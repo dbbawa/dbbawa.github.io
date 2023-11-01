@@ -1,6 +1,6 @@
 body{
   background-color: lightblue;
-  font-family: Monospace;
+  font-family: Arial;
 }
 h1{
   color: white;
@@ -19,4 +19,5 @@ a {
 .assign img{
   width: 200px;
   padding: 10px;
+  border: 2px solid white;
 }
