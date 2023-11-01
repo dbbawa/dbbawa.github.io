@@ -15,6 +15,7 @@ a {
   padding: 10px;
   background-color: lightgrey;
   display: flex:;
+  border-radius: 20px curved corners;
 }
 .assign img{
   width: 200px;
