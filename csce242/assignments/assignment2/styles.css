@@ -7,14 +7,50 @@ body {
 
 #content {
     background-color: lightblue;
+    padding: 10px;
+    margin: 15px auto;
+    width: 70%;
+    border-radius: 8px;
+    color: white;
 
+}
+
+#main-nav li {
+    list-style-type: none; 
+    display:inline-block; 
+}
+
+#main-nav a {
+    text-decoration: none;
+    background: #C0C0C0;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    color: lightgreen;
 }
 
 /* Table */
 table {
-    width: 70%;
-    margin: 20px;
-    border: 2px solid lightgreen;
-    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
     background-color: pink;
+    padding: 1px;
+}
+
+.baby-dolphin {
+    border: 5px solid lightgreen;
+    padding: 1px;
+    display: block;
+}
+
+.pod-dolphins {
+    border: 5px solid lightgreen;
+    padding: 1px;
+    display: block;
 }
