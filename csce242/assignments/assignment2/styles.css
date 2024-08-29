@@ -1,0 +1,20 @@
+body {
+    background-image: url(images/beach.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-position: center;
+}
+
+#content {
+    background-color: lightblue;
+
+}
+
+/* Table */
+table {
+    width: 70%;
+    margin: 20px;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+    background-color: pink;
+}
