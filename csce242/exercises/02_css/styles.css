@@ -1,0 +1,46 @@
+/* Structure */
+body {
+    background: #F0F8FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background: white;
+    padding:5px;
+    margin:20px auto;
+    width:70%;
+    border-radius: 10px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0; /* removes the left padding */
+}
+
+#main-nav li {
+    list-style-type: none; /* no bulles */
+    display:inline-block; /* appear on one line */
+}
+
+#main-nav a {
+    text-decoration: none; /* no underline */
+    background: #C0C0C0;
+    color: #B0E0E6;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    background: black;
+    color: #C0C0C0;
+}
+
+/* Typography */
+h1 {
+    color:#FAEBD7;
+}
+
+p {
+    color:#FFB6C1;
+}
