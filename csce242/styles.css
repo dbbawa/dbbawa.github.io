@@ -3,15 +3,33 @@ body {
    font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
+h1, h2, h3 {
     color: white;
+}
+
+#content h2, h1{
+    text-align: center;
+}
+
+#content h1 {
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+#content h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+#content h3 {
+    padding-left: 30px;
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 p {
-    color: white;
-}
-
-h2 {
     color: white;
 }
 
@@ -19,3 +37,44 @@ h2 {
     text-decoration: none;
     color: lightskyblue;
 }
+
+.assignments-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.assignments {
+    background: lightblue;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.assignments img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.assignments h3 {
+    margin: 10px 0;
+}
+
+.assignments p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.assignments a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
