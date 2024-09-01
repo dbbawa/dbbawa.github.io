@@ -11,6 +11,24 @@ body {
     border-radius: 5px;
 }
 
+#species section {
+    background: lightgreen;
+    padding: 5px;
+    margin: 5px;
+}
+
+#main-aside {
+    background: lightsalmon;
+}
+
+#news section {
+    background: lightcyan;
+}
+
+img {
+    max-width:100%;
+}
+
 #main-header {
     background-color: skyblue;
     border-radius: 5px;
@@ -44,7 +62,35 @@ body {
 }
 
 /* Media Queries */
-/* Apply to 768px and larger */
+
+/* Apply to 600px and larger */
 @media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 1;
+    }
+
+    .four {
+        flex: 1;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+}
+
+/* Apply to 768px and larger */
+@media only screen and (min-width:768px) {
 
 }
