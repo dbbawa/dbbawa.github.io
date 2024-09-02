@@ -83,7 +83,7 @@ p {
     .assignments-section {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 7px;
     }
 
     .assignments {
