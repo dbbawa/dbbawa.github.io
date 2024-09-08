@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+}
+
+/* Top Bar styles */
+.top-bar {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-size: 12px;
+    font-size: 9px;
+    padding-right: 130px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 9px;
+}
+
+.spacer {
+    margin-right: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.navbar-left img {
+    height: 50px;
+}
+
+.navbar-left .text {
+    margin-left: 10px;
+    color: white;
+
+}
+
+.navbar-left .text .university {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.navbar-left .text .south-carolina {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+
+/* Garnet menu styles */
+.garnet-menu {
+    background-color: #7c0d0e;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garnet-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    color: white;
+    padding: 0;
+    font-size: 25px;
+    position: relative;
+}
+
+.garnet-box {
+    background-color: #7c0d0e;
+    padding: 15px 15px; /* Horizontal padding only */
+    height: 50px; /* Fixed height */
+    color: white;
+    display: flex; /* Flexbox for vertical centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: flex-start; /* Horizontally align the text to the left */
+    position: absolute;
+    bottom: -33px; /* Keep the bottom positioning */
+    right: 27%; /* Keep the right positioning */
+}
+
+
+.header img {
+    width: 100%;
+    height: auto;
+   
+}
+
+/* Main section */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    background-color: white; /* Optional: background color */
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.main-content h1 {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+    padding-top: 20px;
+}
+
+.main-content p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.cta-button {
+    background-color: #7c0d0e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.split-screen {
+    display: flex;
+    height: 400px; /* Adjust height as needed */
+    margin-top: 20px; /* Add some spacing between sections */
+}
+
+.split-screen .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.split-screen .image img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.split-screen .text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking of title and text */
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: #7c0d0e; /* Background color for text area */
+}
+
+.split-screen .text h2 {
+    font-size: 38px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Space between title and text */
+    color: white; /* Adjust the color as needed */
+    text-align: left;
+}
+
+.split-screen .text p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    color: white;
+    font-weight: normal;
+}
+
+.r-button {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    border: 2px solid white; /* White border */
+    box-sizing: border-box;
+    width: 48%;
+    font-weight: bold;
+}
+
+.investment-section {
+    background-color: #f4f4f4;
+    text-align: center; /* Center align text and buttons */
+    padding: 20px; /* Add some padding if needed */
+    padding-bottom: 50px;
+}
+
+.investment-section h2 {
+    color: #5c0a09;
+    font-size: 40px;
+    text-align: center; /* Center the heading */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+}
+
+.investment-section p {
+    color: #000;
+    line-height: 2;
+    text-align: center; /* Center align paragraph text */
+    max-width: 800px; /* Optional: limit the width of the paragraph */
+    margin: 0 auto; /* Center align the paragraph */
+}
+
+.tandf-button {
+    background-color: #7c0d0e;
+    color: white;
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0; /* No rounded corners */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Space between paragraph and button */
+    border: 2px solid white; /* White border */
+    font-weight: bold;
+}
+
+.box-section {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.box-section h2 {
+    color: #5c0a09;
+    margin-bottom: 15px;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.box-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #333;
+    line-height: 2;
+    padding-bottom: 30px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between boxes */
+    flex-wrap: wrap; /* Allows wrapping to a new line if necessary */
+    gap: 10px; /* Space between images */
+    margin: 0 auto; /* Center align the container */
+}
+
+.image-box {
+    flex: 1; /* Allow boxes to grow and shrink as needed */
+    max-width: 250px; /* Ensure consistent maximum width */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0; /* Optional: Rounded corners for images */
+}
+
+.text-box {
+    text-align: center;
+    padding: 10px;
+}
+
+.text-box .image-link {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7c0d0e; /* Link color */
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+}
+
+.text-box p {
+    color: #333;
+    margin: 0;
+    line-height: 2;
+    text-align: left;
+}
+
+.apply-now {
+    background-color: #000; /* Black background for the entire footer */
+    color: white;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+}
+
+.apply-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.apply-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.apply-image img {
+    width: 290px; /* Set a specific width for the small image */
+    height: 300px; /* Maintain aspect ratio */
+    margin: 0;
+}
+
+.apply-text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.apply-text h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust as needed */
+}
+
+.apply-text p {
+    margin: 10px 0;
+    font-size: 16px; /* Adjust as needed */
+    line-height: 2;
+}
+
+.apply-button {
+    background-color: #7c0d0e; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0; /* Rounded corners for button */
+    margin-top: 10px;
+    border: 2px solid white; /* White border */
+}
+
+#footer {
+    background-color: #7c0d0e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+
+}
+
+#three-icons {
+    position: absolute; /* Position absolutely within the footer */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: flex;
+    gap: 30px; /* Space between images */
+}
+
+#three-icons img {
+    width: 50px; /* Width of each image */
+    height: 50px; /* Height of each image */
+    object-fit: cover; /* Ensure images cover their box */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px;
+    background-color: #7c0d0e;
+    box-sizing: border-box;
+}
+
+#icon {
+    display: flex; /* Use flexbox for layout within icon section */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between image and text */
+    position: absolute; /* Absolute positioning within the footer */
+    top: 20px; /* Space from the top of the footer */
+    left: 20px; /* Space from the left of the footer */
+    background-color: #7c0d0e; /* Match footer background color */
+    color: white;
+    padding-left: 70px;
+}
+
+#bottom-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#bottom-links ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#bottom-links ul li{
+    padding: 5px 0;
+    font-size: 13px;
+    color: white;
+}
+
+
+.text .university {
+  font-size: 15px;
+}
+
+.text .south-carolina {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Adjust the links section */
+#bottom-links > div {
+    flex: 1;
+    position: relative;
+}
+
+.underline {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    width: 100%;
+    font-weight: bold;
+}
+
+#bottom-links li {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+#very-bottom {
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#very-bottom p {
+    display: inline;
+    margin: 0 5px; 
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-left {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .header img {
+        max-height: 300px;
+    }
+
+    .garnet-menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar-left .text {
+        text-align: center;
+    }
+
+    .top-bar {
+        font-size: 10px;
+    }
+}
