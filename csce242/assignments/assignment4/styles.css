@@ -3,7 +3,6 @@ body {
     font-family: 'Berlingske Serif', 'Georgia', serif;
 }
 
-/* Top Bar styles */
 .top-bar {
     background-color: #000;
     color: white;
@@ -25,7 +24,6 @@ body {
     margin-right: 10px;
 }
 
-/* Navbar styles */
 .navbar {
     background-color: #000;
     color: white;
@@ -63,8 +61,6 @@ body {
     font-weight: normal;
 }
 
-
-/* Garnet menu styles */
 .garnet-menu {
     background-color: #7c0d0e;
     color: white;
@@ -81,7 +77,6 @@ body {
     font-weight: bold;
 }
 
-/* Header section */
 .header {
     text-align: center;
     color: white;
@@ -92,17 +87,16 @@ body {
 
 .garnet-box {
     background-color: #7c0d0e;
-    padding: 15px 15px; /* Horizontal padding only */
-    height: 50px; /* Fixed height */
+    padding: 15px 15px; 
+    height: 50px; 
     color: white;
-    display: flex; /* Flexbox for vertical centering */
-    align-items: center; /* Vertically center the text */
-    justify-content: flex-start; /* Horizontally align the text to the left */
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
     position: absolute;
-    bottom: -33px; /* Keep the bottom positioning */
-    right: 27%; /* Keep the right positioning */
+    bottom: -33px; 
+    right: 27%; 
 }
-
 
 .header img {
     width: 100%;
@@ -110,13 +104,12 @@ body {
    
 }
 
-/* Main section */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Remove default margin */
-    background-color: white; /* Optional: background color */
+    margin: 0; 
+    background-color: white; 
 }
 
 .main-content {
@@ -153,8 +146,8 @@ body {
 
 .split-screen {
     display: flex;
-    height: 400px; /* Adjust height as needed */
-    margin-top: 20px; /* Add some spacing between sections */
+    height: 400px; 
+    margin-top: 20px; 
 }
 
 .split-screen .image {
@@ -175,17 +168,17 @@ body {
     flex: 1;
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Ensure vertical stacking of title and text */
+    flex-direction: column; 
     justify-content: center;
     align-items: left;
     text-align: left;
-    background-color: #7c0d0e; /* Background color for text area */
+    background-color: #7c0d0e; 
 }
 
 .split-screen .text h2 {
-    font-size: 38px; /* Adjust the size as needed */
-    margin-bottom: 10px; /* Space between title and text */
-    color: white; /* Adjust the color as needed */
+    font-size: 38px; 
+    margin-bottom: 10px; 
+    color: white; 
     text-align: left;
 }
 
@@ -198,15 +191,15 @@ body {
 }
 
 .r-button {
-    background-color: black; /* Black background */
-    color: white; /* White text */
+    background-color: black; 
+    color: white; 
     padding: 20px 20px;
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    border-radius: 0; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    border: 2px solid white; /* White border */
+    border-radius: 0; 
+    font-size: 16px; 
+    border: 2px solid white; 
     box-sizing: border-box;
     width: 48%;
     font-weight: bold;
@@ -214,24 +207,24 @@ body {
 
 .investment-section {
     background-color: #f4f4f4;
-    text-align: center; /* Center align text and buttons */
-    padding: 20px; /* Add some padding if needed */
+    text-align: center; 
+    padding: 20px; 
     padding-bottom: 50px;
 }
 
 .investment-section h2 {
     color: #5c0a09;
     font-size: 40px;
-    text-align: center; /* Center the heading */
-    margin-bottom: 15px; /* Space between heading and paragraph */
+    text-align: center; 
+    margin-bottom: 15px; 
 }
 
 .investment-section p {
     color: #000;
     line-height: 2;
-    text-align: center; /* Center align paragraph text */
-    max-width: 800px; /* Optional: limit the width of the paragraph */
-    margin: 0 auto; /* Center align the paragraph */
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .tandf-button {
@@ -241,10 +234,10 @@ body {
     padding: 20px 20px;
     text-decoration: none;
     text-align: center;
-    border-radius: 0; /* No rounded corners */
-    font-size: 16px; /* Font size */
-    margin-top: 20px; /* Space between paragraph and button */
-    border: 2px solid white; /* White border */
+    border-radius: 0; 
+    font-size: 16px; 
+    margin-top: 20px; 
+    border: 2px solid white; 
     font-weight: bold;
 }
 
@@ -274,25 +267,25 @@ body {
 
 .images {
     display: flex;
-    justify-content: space-between; /* Ensure equal spacing between boxes */
-    flex-wrap: wrap; /* Allows wrapping to a new line if necessary */
-    gap: 10px; /* Space between images */
-    margin: 0 auto; /* Center align the container */
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin: 0 auto;
 }
 
 .image-box {
-    flex: 1; /* Allow boxes to grow and shrink as needed */
-    max-width: 250px; /* Ensure consistent maximum width */
-    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherits text color from parent */
+    flex: 1; 
+    max-width: 250px; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .image-box img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 0; /* Optional: Rounded corners for images */
+    border-radius: 0;
 }
 
 .text-box {
@@ -304,7 +297,7 @@ body {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #7c0d0e; /* Link color */
+    color: #7c0d0e;
     text-decoration: none;
     text-align: left;
     font-weight: bold;
@@ -318,7 +311,7 @@ body {
 }
 
 .apply-now {
-    background-color: #000; /* Black background for the entire footer */
+    background-color: #000; 
     color: white;
     padding: 0px;
     height: 100%;
@@ -343,8 +336,8 @@ body {
 }
 
 .apply-image img {
-    width: 290px; /* Set a specific width for the small image */
-    height: 300px; /* Maintain aspect ratio */
+    width: 290px; 
+    height: 300px; 
     margin: 0;
 }
 
@@ -355,24 +348,24 @@ body {
 
 .apply-text h2 {
     margin: 0;
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; 
 }
 
 .apply-text p {
     margin: 10px 0;
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px; 
     line-height: 2;
 }
 
 .apply-button {
-    background-color: #7c0d0e; /* Button background color */
-    color: white; /* Button text color */
+    background-color: #7c0d0e; 
+    color: white; 
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 0; /* Rounded corners for button */
+    border-radius: 0; 
     margin-top: 10px;
-    border: 2px solid white; /* White border */
+    border: 2px solid white; 
 }
 
 #footer {
@@ -387,17 +380,17 @@ body {
 }
 
 #three-icons {
-    position: absolute; /* Position absolutely within the footer */
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
     display: flex;
-    gap: 30px; /* Space between images */
+    gap: 30px; 
 }
 
 #three-icons img {
-    width: 50px; /* Width of each image */
-    height: 50px; /* Height of each image */
-    object-fit: cover; /* Ensure images cover their box */
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; 
 }
 
 .footer-container {
@@ -410,13 +403,13 @@ body {
 }
 
 #icon {
-    display: flex; /* Use flexbox for layout within icon section */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Space between image and text */
-    position: absolute; /* Absolute positioning within the footer */
-    top: 20px; /* Space from the top of the footer */
-    left: 20px; /* Space from the left of the footer */
-    background-color: #7c0d0e; /* Match footer background color */
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+    background-color: #7c0d0e; 
     color: white;
     padding-left: 70px;
 }
@@ -448,7 +441,6 @@ body {
     font-weight: bold;
 }
 
-/* Adjust the links section */
 #bottom-links > div {
     flex: 1;
     position: relative;
@@ -483,7 +475,7 @@ ul li a {
 }
 
 #very-bottom {
-    background-color: #000; /* Black background */
+    background-color: #000; 
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -508,13 +500,15 @@ ul li a {
         margin-top: 10px;
     }
 
-    .header img {
-        max-height: 300px;
+    .garnet-menu {
+        flex-direction: column; 
+        align-items: center;   
     }
 
     .garnet-menu a {
         display: block;
         margin: 10px 0;
+        text-align: center; 
     }
 
     .navbar-left .text {
