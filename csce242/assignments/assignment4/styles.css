@@ -489,9 +489,18 @@ ul li a {
     font-size: 10px;
 }
 
+.underline {
+    border-bottom: none;
+}
+
+.underline hr {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
+
     .top-bar {
-        display: none; /* Hide the top bar when screen width is 768px or less */
+        display: none; 
     }
     .navbar {
         flex-direction: column;
@@ -499,7 +508,7 @@ ul li a {
     }
 
     .navbar-left {
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 10px;
     }
 
@@ -553,6 +562,17 @@ ul li a {
         right: auto;
         margin-top: 20px; 
         color: #7c0d0e;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
     }
 }
 
