@@ -490,6 +490,9 @@ ul li a {
 }
 
 @media (max-width: 768px) {
+    .top-bar {
+        display: none; /* Hide the top bar when screen width is 768px or less */
+    }
     .navbar {
         flex-direction: column;
         text-align: center;
@@ -518,4 +521,38 @@ ul li a {
     .top-bar {
         font-size: 10px;
     }
+
+    .box-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-box img {
+        width: 80%;
+        height: auto;
+    }
+
+    .text-box p {
+        text-align: center;
+    }
+
+    .garnet-box {
+        background-color: transparent;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px; 
+        color: #7c0d0e;
+    }
 }
+
