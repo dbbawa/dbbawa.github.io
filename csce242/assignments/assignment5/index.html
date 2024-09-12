@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Client Slide</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1 class="title">Assignment 7</h1>
+                <h2 class="subtitle">Introduction to JavaScript</h2>
+            </div>
+            <div class="columns">
+                <div class="column1" id="column1"><strong>Count</strong></div>
+                <div class="column2" id="column2">
+                    <strong class="random-title">Random Image</strong>
+                    <img src="https://picsum.photos/200/200.webp" id="random-image" class="image"/>
+                </div>
+                <div class="column3">
+                    <strong class="slider-title">Slider Move</strong>
+                    <div class="slider-column">
+                        <input type="range" id="slider" min="0" max="100" value="0" class="slider">
+                        <div class="image-wrap">
+                            <img src="images/place-holder.jpg" id="slider-image" class="slider-image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; dbbawa.com</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
