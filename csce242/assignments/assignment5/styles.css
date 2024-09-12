@@ -133,3 +133,22 @@ body, html {
     font-size: 14px;
     color: rgb(83, 202, 242);
 }
+/*Small Screen*/
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .column1, .column2, .column3 {
+        flex: 1 1 auto;
+        margin: 0;
+        height: 500px; 
+        width: 400px;
+    }
+
+    .column1 .count-number{
+        padding-bottom: 150px;
+    }
+}
