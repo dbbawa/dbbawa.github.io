@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript: Conditionals</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1 class="title">Assignment 8</h1>
+                <h2 class="subtitle">JavaScript: Conditionals</h2>
+            </div>
+            <div class="menu-container">
+                <button id="menu-toggle" class="menu-button">
+                    <span id="arrow">▼</span>
+                </button>
+                <ul id="menu-items" class="menu-items">
+                    <li>Exercise 1</li>
+                    <li>Exercise 2</li>
+                </ul>
+            </div>
+            <div class="column" id="slider-section">
+                <div class="slider-box" id="slider-box">
+                    <strong class="slider-title">Color Slider</strong>
+                    <input type="range" id="slider" min="0" max="255" value="0" class="slider">
+                    <div class="message" id="color-message"></div>
+                </div>
+            </div>
+            <div class="column2" id="pic-chooser-section" style="display: none;">
+                <div class="pic-chooser" id="pic-chooser">
+                    <strong class="chooser-title">Picture Chooser</strong>
+                    <div class="button-container">
+                        <button class="button" data-size="small">Small</button>
+                        <button class="button" data-size="medium">Medium</button>
+                        <button class="button" data-size="large">Large</button>
+                    </div>
+                    <img id="chosen-image" style="display: none; margin-top: 10px;"/>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; dbbawa.com</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
