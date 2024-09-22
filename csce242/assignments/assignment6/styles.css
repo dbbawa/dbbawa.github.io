@@ -118,7 +118,7 @@ body, html {
 }
 
 .column {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .column2 {
@@ -151,6 +151,7 @@ body, html {
 
 .footer {
     color: #c9eec9;
+    margin-top: -10px;
 }
 
 /* large screen */
