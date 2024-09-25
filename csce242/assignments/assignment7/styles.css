@@ -105,7 +105,7 @@ button {
 }
 
 .star::before {
-    content: '\2605'; 
+    content: '\2605'; /* Found how to do star on https://hydrogenaud.io/index.php/topic,37035.0.html */
     font-size: inherit; 
     display: inline-block; 
     vertical-align: middle;
@@ -113,5 +113,13 @@ button {
 
 .footer {
     color: #c9eec9;
-    margin-top: 30px;
+    margin-top: auto;
+    text-align: center;
+    margin-top: -60px;
+}
+
+@media (min-width: 1468px) {
+    .footer {
+        margin-top: -120px;
+    }
 }
