@@ -1,31 +1,20 @@
-const imagesArray = [
-    { src: "images/birthday.jpg", title: "birthday", description: "Happy birthday to me!" },
-    { src: "images/clown.jpg", title: "clown", description: "Boo! Wanna see a trick?" },
-    { src: "images/rain.jpg", title: "rain", description: "Rain rain, go away!" },
-    { src: "images/read.jpg", title: "read", description: "Wanna start a book club?" },
-    { src: "images/shovel.jpg", title: "shovel", description: "Gonna garden some squash!" },
-    { src: "images/work.jpg", title: "work", description: "I'm an engineering major!" }
-];
+const imagesArray = {
+   "birthday": { src: "images/birthday.jpg", title: "birthday", description: "Happy birthday to me!" },
+   "clown": { src: "images/clown.jpg", title: "clown", description: "Boo! Wanna see a trick?" },
+   "rain": { src: "images/rain.jpg", title: "rain", description: "Rain rain, go away!" },
+   "read": { src: "images/read.jpg", title: "read", description: "Wanna start a book club?" },
+   "shovel": { src: "images/shovel.jpg", title: "shovel", description: "Gonna garden some squash!" },
+   "work": { src: "images/work.jpg", title: "work", description: "I'm an engineering major!" }
+};
 
-function showDescription(title, description) {
+const showDescription = (title, description) => {
     const descriptionDiv = document.getElementById('description');
     descriptionDiv.innerHTML = `<strong>${title}</strong><br>${description}`;
 }
 
-function setupImageClickEvents() {
-    const images = document.querySelectorAll('#imageGrid img');
-    images.forEach(image => {
-        image.onclick = () => {
-            const title = image.getAttribute('data-title');
-            const description = image.getAttribute('data-description');
-            showDescription(title, description);
-        };
-    });
-}
-
-function displayImages() {
+const displayImages = () => {
     const imageGrid = document.getElementById('imageGrid');
-    imagesArray.forEach(imageData => {
+    Object.values(imagesArray).forEach(imageData => {
         const imgElement = document.createElement('img');
         imgElement.src = imageData.src;
         imgElement.setAttribute('data-title', imageData.title);
@@ -37,5 +26,4 @@ function displayImages() {
 
 window.onload = () => {
     displayImages();
-    setupImageClickEvents();
 };
