@@ -23,7 +23,7 @@ document.getElementById('draw-button').addEventListener('click', () => {
 
         star.addEventListener('click', () => {
             const starNumber = star.getAttribute('data-star-number');
-            const suffix = getOrdinalSuffix(starNumber);
+            const suffix = getSuffix(starNumber);
             messageDisplay.textContent = `I'm the ${starNumber}${suffix} star made!`; 
         });
 
@@ -31,7 +31,7 @@ document.getElementById('draw-button').addEventListener('click', () => {
     }
 });
 
-const getOrdinalSuffix = (number) => {
+const getSuffix = (number) => {
     const lastDigit = number % 10;
     const lastTwoDigits = number % 100;
 
