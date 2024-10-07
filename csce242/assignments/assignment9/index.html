@@ -10,29 +10,30 @@
                 <h1 class="title-top">Assignment 11</h1>
                 <h2 class="subtitle">Classes</h2>
             </div>
-            <div class="columns">
-                <div class="column1" id="column1">
-                    <strong class="title">Hummingbird</strong>
-                    <img src="images/hummingbird.jpg" id="image" class="image"/>
-                </div>
-                <div class="column2" id="column2">
-                    <strong class="title">Blue Jay</strong>
-                    <img src="images/bluejay.avif" id="image" class="image"/>
-                </div>
-                <div class="column3" id="column3">
-                    <strong class="title">Cardinal</strong>
-                    <img src="images/cardinal.avif" id="image" class="image"/>
-                </div>
-                <div class="column4" id="column4">
-                    <strong class="title">Robin</strong>
-                    <img src="images/robin.avif" id="image" class="image"/>
+            
+            <!-- Bird Container where birds will be dynamically added -->
+            <div id="bird-container" class="columns"></div>
+
+            <!-- Modal Structure (click outside to close) -->
+            <div id="myModal" class="w3-modal" onclick="closeModal()">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" onclick="event.stopPropagation()">
+                    <div class="modal-left">
+                        <div id="modal-text">
+                            <!-- Bird text content will go here -->
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <img id="modal-image" src="" alt="Bird Image" />
+                    </div>
                 </div>
             </div>
+
             <div class="footer">
                 <p>Images from FreePik</p>
                 <p>&copy; dbbawa.com</p>
             </div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>

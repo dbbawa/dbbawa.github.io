@@ -34,47 +34,68 @@ body, html {
     margin: 0;
 }
 
-.columns {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    gap: 50px 0;
+.bird-image {
+    width: 200px; /* Set a fixed width for all bird images */
+    height: 200px; /* Set a fixed height for all bird images */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 5px; /* Optional: rounded corners for images */
+    margin: 10px; /* Optional: margin around the images */
 }
 
-.column1, .column2, .column3, .column4 {
-    flex: 0.4;
-    display: flex;           
-    flex-direction: column;   
-    align-items: center;      
-    text-align: center;
-    margin: 0 10px;
-    background-color: pink;
-    padding: 15px;
-    min-height: 350px;
+/* Bird container styling */
+#bird-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    gap: 10px; /* Add space between items */
 }
 
-.column1 img, .column2 img, .column3 img, .column4 img {
-    width: 200px; 
+/* Modal styling */
+.w3-modal {
+    display: none; /* Initially hide modal */
+    position: fixed; /* Position it fixed */
+    z-index: 1000; /* Bring it to the front */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+/* Modal content */
+.w3-modal-content {
+    display: flex; /* Use flexbox for modal content */
+    max-width: 800px; /* Limit modal width */
+    margin: 15% auto; /* Center the modal */
+    background-color: white; /* White background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Modal left and right sections */
+.modal-left {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Add padding */
+}
+
+.modal-right {
+    flex: 1; /* Take up available space */
+}
+
+/* Modal image styling */
+#modal-image {
+    width: 200px;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Cover aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
-.title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: white;
-}
-
+/* Footer styling */
 .footer {
-    margin-top: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: rgb(83, 202, 242);
-}
-
-.footer p {
-    margin: 5px 0;
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Add top margin */
+    font-size: 0.9em; /* Smaller font size */
+    color: gray; /* Gray color for footer text */
 }
 
 /* small screen */

@@ -9,6 +9,8 @@
     --color-lightblue: #90D5FF; 
     --color-lightpink: #ffd0d7; 
     --color-background: #f3f4fc; 
+    --color-blue: #e4e4e4;
+    --color-footer: #bcccdc;
 }
 
 body {
@@ -86,7 +88,7 @@ h1 {
 .footer-divider {
     width: 90%; 
     height: 2px;
-    background-color: #bcccdc; 
+    background-color: var(--color-footer); 
     border: none; 
     margin: 30px auto 0; 
 }
@@ -103,7 +105,8 @@ h1 {
 .index-page main {
     padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -112,75 +115,66 @@ h1 {
     color: var(--color-black);
 }
 
-.index-page .left-side, .index-page .word-week, .index-page .middle-section, .index-page .article-box {
-    width: 100%;
-    max-width: 600px;
-}
-
 .index-page .content-wrapper {
-    display: flex;
-    justify-content: center; 
+    display: flex; 
+    justify-content: space-between; 
     align-items: flex-start; 
-    gap: 30px; 
-    flex-wrap: wrap;
-    width: 100%; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    box-sizing: border-box; 
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px; 
 }
 
-.index-page .left-side {
-    flex: 1;
-    padding: 10px;
+.index-page .left-side, 
+.index-page .right-side {
+    flex: 1; 
     max-width: 400px;
+    padding: 10px; 
     text-align: left;
-    margin-left: 0;
-    padding-top: 50px;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-blue);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .index-page .left-side h2, 
-.index-page .middle-section h2, 
-.index-page .word-week h2 {
+.index-page .right-side h2 {
     font-weight: normal;
     font-size: 25px;
 }
 
 .index-page .left-side p, 
-.index-page .middle-section p, 
-.index-page .word-week p {
+.index-page .right-side p {
     font-size: 15px;
 }
 
-.index-page .word-week, 
 .index-page .middle-section {
-    padding: 20px; 
-    width: 100%;
-    max-width: 600px;
-    margin: 0 70px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 20px; 
 }
 
-.index-page .main-content {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
-    padding: 0 40px;
+.index-page .word-week {
+    max-width: 400px; 
+    padding: 20px;
+    text-align: center; 
 }
 
 .index-page .article-box {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: center;
     justify-content: center; 
     background-color: var(--color-light-gray);
-    border-radius: 20px;
-    width: 250px;
-    height: 300px;
-    padding: 20px;
-    margin-top: 80px;
-    box-sizing: border-box;
+    border-radius: 20px; 
+    width: 250px; 
+    height: 300px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.index-page .article-box:hover {
+    opacity: 0.7;
 }
 
 .index-page .article-img {
@@ -227,11 +221,21 @@ h1 {
     margin-top: 20px;
 }
 
-/* Basics */
+.index-page .two-column-layout {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center; 
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 90px; 
+}
 
+/* Basics */
 .basics-page {
     background-color: var(--color-background);
 }
+
 .basics-page .columns {
     display: flex;
     justify-content: space-between;
@@ -248,8 +252,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border: 2px solid white;
-    background-color: #e4ecfc;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-blue);
     padding: 20px;
     margin-bottom: 20px;
     min-height: 200px;
@@ -313,20 +317,59 @@ h1 {
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    width: 80%;
+    width: 95%;
     max-width: 1200px;
+    gap: 30px;
 }
 
 .contact-page .left-box {
-    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    flex: 1; 
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-white);
+    max-width: 600px;
+}
+
+.contact-page .left-box label {
+    display: block;
+    margin: 10px 0 5px; 
+    text-align: left;
+}
+
+.contact-page .left-box input,
+.left-box textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    margin-bottom: 30px; 
+}
+
+.contact-page .left-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-light-gray); 
+    color: var(--color-white); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.contact-page .left-box button:hover {
+    opacity: 0.7;
 }
 
 .contact-page .left-box h2 {
     margin-top: 0;
     font-weight: normal;
     font-size: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-page .right-section {
@@ -342,16 +385,19 @@ h1 {
     border-radius: 10px;
     padding: 20px;
     text-align: center; 
+    padding: 10px;
 }
 
 .contact-page .right-box h2 {
     margin-top: 0;
     font-weight: normal;
     font-size: 25px;
+    padding: 10px;
 }
 
 .contact-page .right-box p {
     font-size: 15px;
+    text-align: left;
 }
 
 .contact-page .qr-box {
@@ -392,6 +438,8 @@ h1 {
     font-size: 25px;
     text-align: center;
 }
+
+
 /* Destinations */
 .dest-page .horizontal-boxes {
     display: flex;
@@ -435,22 +483,21 @@ h1 {
     margin: 0 auto;
 }
 
-.dest-page .dest-title {
-    color: var(--color-black);
-}
-
 .dest-page .dest-box {
     display: flex; 
     align-items: center; 
-    border: 1px solid var(--color-black);
     border-radius: 25px;
-    background-color: #e4ecfc;
+    background-color: var(--color-blue);
     width: 100%; 
     box-sizing: border-box;
     height: 120px;
     text-decoration: none; 
     color: var(--color-black); 
     margin-bottom: 40px;
+}
+
+.dest-page .dest-box:hover {
+    opacity: 0.7;
 }
 
 .dest-page .dest-img {
@@ -461,10 +508,11 @@ h1 {
 }
 
 .dest-page .dest-title {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
-    padding-left: 160px;
+    flex: 1;
+    color: var(--color-black);
 }
 
 .dest-page .dest-box .dest-img img {
@@ -472,52 +520,83 @@ h1 {
     height: 100px; 
     border-radius: 25px; 
 }
+
 /* Cost & Gear */
+.cost-page {
+    background-color: var(--color-background);
+    color: var(--color-black);
+}
+
 .cost-page .content-wrapper {
-    display: flex;
+    display: flex; 
     width: 90%;
     margin: 0 auto;
     padding-top: 30px;
     justify-content: space-between; 
 }
 
-.cost-page {
-    background-color: var(--color-background);
-    color: var(--color-black);
+.cost-page .wear {
+    order: 1;
+    flex: 1; 
+    text-align: left; 
+}
+
+.cost-page .more-info {
+    order: 2; 
+    text-align: center;
+    flex: 0 1 30%;
+    margin: 0 20px; 
+}
+
+.cost-page .right-side {
+    order: 3;
+    flex: 1; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.cost-page .two-column-layout {
+    display: block; 
+    margin-top: 20px; 
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .cost-page .left-side {
-    flex: 1;
+    width: 90%; 
     padding: 10px;
-    max-width: 400px;
-    text-align: center;
-    padding-top: 50px;
+    text-align: left; 
+    margin: 30px auto;
+    border: 2px solid var(--color-light-gray); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
-.cost-page .right-side h3 {
-    font-size: 25px;
-    font-weight: normal;
+.cost-page .grid-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cost-page .grid-item {
+    flex: 1 1 200px;
+    max-width: 300px; 
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 .cost-page .content-wrapper h2 {
     font-weight: normal;
     font-size: 25px;
-}
-
-.cost-page .main-content {
-    flex: 2; 
-    padding: 20px;
-}
-
-.cost-page .middle-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cost-page .word-week, .cost-page .more-info {
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .cost-page .more-info .btn {
@@ -533,13 +612,8 @@ h1 {
     background-color: var(--color-light-gray);
 }
 
-.cost-page .grid-item {
-    flex: 1 1 200px;
-    max-width: 300px; 
-    text-align: center;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+.cost-page .more-info .btn:hover {
+    opacity: 0.7;
 }
 
 .cost-page .grid-item img {
@@ -549,35 +623,13 @@ h1 {
     object-fit: cover; 
 }
 
-.cost-page .grid-item h3,
-.cost-page .grid-item p {
-    margin: 0; 
-}
-
-.cost-page .grid-item p {
-    margin-top: 10px; 
-}
-
-.cost-page .grid-container {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    width: 90%;
-    margin: 0 auto;
-}
-
-.cost-page .right-side h3 {
-    text-align: center; 
-}
-
-.bottom-section {
+.cost-page .bottom-section {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.bottom-section img {
+.cost-page .bottom-section img {
     width: 18%; 
     height: auto;
     border-radius: 8px;
@@ -595,13 +647,14 @@ h1 {
 
 .colorado-page .location-details h2 {
     box-sizing: border-box;
-    border: 2px solid #2262a0;
+    border: 2px solid var(--color-white);
+    background-color: #e4ecfc;
     border-radius: 15px;
     padding: 10px;
     margin: 20px;
     width: 300px;
     text-align: center;
-    color: #2262a0;
+    color: var(--color-black);
 }
 
 .colorado-page .location-image img {
@@ -668,50 +721,34 @@ h1 {
         display: block; 
         padding-bottom: 10px;
         color: var(--color-black);
-    }
-
-    .index-page main {
-        flex-direction: column; 
-        padding: 10px;
+        margin-bottom: 10px;
     }
 
     .index-page .content-wrapper {
         flex-direction: column;
-        align-items: center; 
-        gap: 20px; 
-        width: 90%; 
-        margin-left: 5px;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .index-page .left-side,
-    .index-page .word-week,
-    .index-page .middle-section,
-    .index-page .article-box {
-        width: 100%;
-        max-width: none;
-        margin: 0; 
-        padding: 10px; 
+    .index-page .right-side {
+        max-width: none; 
+        width: 80%; 
+        text-align: center; 
+        margin-right: 70px;
+        margin-bottom: 20px; 
     }
 
-    .index-page .word-week,
     .index-page .middle-section {
-        margin: 0; 
-    }
-
-    .index-page .main-content {
-        padding: 10px;
+        margin: 20px 0; 
+        margin-right: 70px;
     }
 
     .index-page .article-box {
-        width: 300px; 
-        height: 350px; 
-        margin: 20px 0; 
-    }
-
-    .index-page .article-img img {
-        width: 200px; 
-        height: 200px; 
-        margin-bottom: 10px; 
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 50px;
+        max-width: 300px; 
     }
 
     .index-page footer {
@@ -790,7 +827,7 @@ h1 {
     }
 
     .dest-page .dest-title {
-        text-align: left; 
+        text-align: center; 
         font-size: 18px;
         font-weight: bold;
         flex: 1; 
@@ -889,8 +926,42 @@ h1 {
         margin: 10px 0;
     }
 
+    .contact-page .left-box {
+        width: 95%; 
+        max-width: 600px; 
+        margin: 10px 0; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+        background-color: var(--color-blue); 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    .contact-page .left-box input,
+    .contact-page .left-box textarea,
+    .contact-page .left-box button {
+        width: 100%; 
+        max-width: 400px; 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        margin-bottom: 15px;
+    }
+
     .contact-page .right-section {
         flex-direction: column;
+    }
+
+    .contact-page .content-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .contact-page .left-box {
+        width: 95%; 
+        padding: 20px; 
     }
 
     .contact-page .right-box {
@@ -933,5 +1004,10 @@ h1 {
     .cost-page .grid-container {
         grid-template-columns: 1fr; 
         gap: 20px; 
+    }
+
+    .cost-page .left-side {
+        width: 90%; 
+        padding: 20px; 
     }
 }
