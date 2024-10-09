@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(246, 249, 237);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+main {
+    flex-grow: 1;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightpink;
+    padding: 10px 0;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+
+}
+
+.content {
+    padding: 0;
+}
+  
+.ice-cream-container {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    margin: 0 auto 20px; 
+    padding: 20px 10px; 
+    grid-gap: 20px; 
+}
+
+.ice-cream-item {
+    position: relative; 
+    width: 100%; 
+    height: 200px;
+    overflow: hidden;
+}
+
+.ice-cream-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.ice-cream-item:hover img {
+    transform: scale(1.05); 
+}
+  
+  .ice-cream-name {
+    position: absolute;
+    bottom: 0;
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    opacity: 0;
+    height: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 5px;
+  }
+  
+  .ice-cream-item:hover .ice-cream-name {
+    opacity: 1;
+  }
+
+  .footer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: lightblue;
+    padding: 20px; 
+}
+
+.footer p {
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .ice-cream-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .ice-cream-item {
+        height: auto; 
+    }
+
+    .ice-cream-name {
+        height: 40px; 
+    }
+}
