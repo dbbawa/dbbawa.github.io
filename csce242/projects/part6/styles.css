@@ -641,7 +641,7 @@ h1 {
 }
 
 /* Colorado */
-.colorado-page .location-profile {
+.colorado-page .location-profile, .vermont-page .location-profile {
     display: flex;
     align-items: flex-start;
     margin: 20px;
@@ -649,7 +649,7 @@ h1 {
     width: 90%;
 }
 
-.colorado-page .location-details h2 {
+.colorado-page .location-details h2, .vermont-page .location-details h2 {
     box-sizing: border-box;
     border: 2px solid var(--color-white);
     background-color: #e4ecfc;
@@ -665,7 +665,7 @@ h1 {
     border: solid 2px var(--color-black);
 }
 
-.colorado-page {
+.colorado-page, .vermont-page, .utah-page, .washington-page, .maine-page, .ny-page, .california-page, .canada-page {
     background-color: var(--color-background);
     color: var(--color-black);
 }

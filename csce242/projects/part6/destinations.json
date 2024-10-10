@@ -1,4 +1,5 @@
-[
+{
+    "destinations": [
     {
         "id": 1,
         "name": "Colorado",
@@ -37,15 +38,7 @@
         "Sleigh Rides",
         "Cross-Country Skiing",
         "Hot Springs"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
 },
     {
         "id": 2,
@@ -85,15 +78,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 3,
@@ -131,15 +116,7 @@
         "Winter Hiking",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 4,
@@ -176,15 +153,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 5,
@@ -221,15 +190,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 6,
@@ -267,15 +228,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 7,
@@ -311,15 +264,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     },
     {
         "id": 8,
@@ -356,14 +301,7 @@
         "Snowmobiling",
         "Cross-Country Skiing",
         "Sledding and Tubing"
-    ],
-    "colors": {
-    "background": "#f3f4fc",
-    "color": "#000000",
-    "background-title": "#e4ecfc",
-    "color-title": "#000000",
-    "border-title": "#ffffff",
-    "border-img": "#000000"
-  }
+    ]
     }
 ]
+}
