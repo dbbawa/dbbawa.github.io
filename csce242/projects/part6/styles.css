@@ -902,12 +902,16 @@ h1 {
     .contact-page .left-box input,
     .contact-page .left-box textarea,
     .contact-page .left-box button {
-        width: 100%; 
+        width: 90%; 
         max-width: 400px; 
         padding: 10px; 
         border: 1px solid #ccc; 
         border-radius: 5px; 
         margin-bottom: 15px;
+    }
+
+    .contact-page .left-box input {
+        width: 80%;
     }
 
     .contact-page .right-section {
@@ -986,7 +990,5 @@ h1 {
         width: 300px;
         height: 200px; 
     }
-
-    
 
 }
