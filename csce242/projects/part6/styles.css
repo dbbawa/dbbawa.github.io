@@ -102,17 +102,19 @@ h1 {
 }
 
 /* Home */
-
 .index-page body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
+
 .index-page main {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .index-page {
@@ -457,7 +459,6 @@ h1 {
 .dest-page {
     background-color: var(--color-background);
     color: var(--color-black);
-    padding: 20px; 
 }
 
 .dest-page .text-box {
@@ -511,6 +512,10 @@ h1 {
     height: 150px; 
     object-fit: cover;
     border-radius: 10px;
+}
+
+.dest-page .dest-img:hover {
+    transform: scale(1.05); 
 }
 
 .dest-page .dest-title {
@@ -725,16 +730,21 @@ h1 {
 
     .index-page .left-side,
     .index-page .right-side {
-        max-width: none; 
-        width: 80%; 
-        text-align: center; 
-        margin-right: 70px;
+        max-width: 100%; 
+        width: 100%; 
+        text-align: left;
+        margin-right: 0; 
         margin-bottom: 20px; 
     }
 
     .index-page .middle-section {
         margin: 20px 0; 
-        margin-right: 70px;
+        margin-right: 0; 
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .index-page .article-box {
@@ -881,18 +891,12 @@ h1 {
         width: 100%;
         margin: 10px 0;
     }
-
+   
     .contact-page .left-box {
-        width: 95%; 
-        max-width: 600px; 
-        margin: 10px 0; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        padding: 20px;
-        background-color: var(--color-blue); 
-        border-radius: 10px; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        width: 90% !important; 
+        max-width: none !important; 
+        padding: 20px; 
+        margin: 10px auto;
     }
 
     .contact-page .left-box input,
@@ -966,4 +970,23 @@ h1 {
         width: 90%; 
         padding: 20px; 
     }
+
+    #destinations-section {
+        grid-template-columns: 1fr;
+        width: 100%; 
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 5% auto; 
+        padding: 10px; 
+    }
+
+    #modal-image {
+        width: 300px;
+        height: 200px; 
+    }
+
+    
+
 }

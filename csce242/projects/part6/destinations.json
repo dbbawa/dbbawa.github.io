@@ -195,7 +195,7 @@
     {
         "id": 6,
         "name": "Canada",
-        "image": "canada-page.jpg",
+        "image": "images/canada-page.jpg",
         "detail_image": "images/dest-canada.jpg",
         "title": "Ski Canada",
         "resorts": [
@@ -233,7 +233,7 @@
     {
         "id": 7,
         "name": "California",
-        "image": "california-page.jpg",
+        "image": "images/california-page.jpg",
         "detail_image": "images/california.jpg",
         "title": "Ski California",
         "resorts": [
@@ -269,7 +269,7 @@
     {
         "id": 8,
         "name": "Washington",
-        "image": "washington-page.jpg",
+        "image": "images/washington-page.jpg",
         "detail_image": "images/washington.jpg",
         "title": "Ski Washington",
         "resorts": [
