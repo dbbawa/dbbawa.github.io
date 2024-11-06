@@ -1,4 +1,5 @@
-:root {
+/* All Accounted for */
+:root { 
     --color-black: #000000;
     --color-dark-gray: #333333;
     --color-gray: #666666;
@@ -100,6 +101,7 @@ h1 {
     object-fit: contain;
     margin-bottom: -50px;
 }
+
 
 /* Home */
 .index-page body {
